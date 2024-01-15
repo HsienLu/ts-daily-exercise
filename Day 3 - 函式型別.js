@@ -11,13 +11,10 @@ B. const add = (x: number, y: number) => x + y;
 C. void
 
 */
-//1.
 function multiply(x, y) {
-  return x * y;
+    return x * y;
 }
-//2.
 const concatString = (x, y) => x + y;
-//3.
 function isGreaterThanTen(x) {
-  return x > 10;
+    return x > 10;
 }
