@@ -11,13 +11,13 @@ C. type example = string;
 */
 
 type BooksData = {
-  id: number | null;
-  title: string | null;
-  isBorrowed: boolean | null;
+  id: number;
+  title: string;
+  isBorrowed: boolean;
   borrowedBy: string | null;
 };
 
-function rentBook(books: BooksData[], bookId: number, userId: string) {
+function rentBook(books: BooksData[], bookId: BooksData["id"], userId: string) {
   // 租借圖書
   const book = books.find((b) => b.id === bookId);
   if (book && !book.isBorrowed) {
