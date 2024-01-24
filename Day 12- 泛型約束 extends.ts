@@ -1,6 +1,6 @@
 //題目一：計算陣列總和
 //開發一個函式 calculateSum，並接受一個數字陣列作為參數，來計算出其總和。請使用泛型約束來確保傳入的參數必須是數字陣列。
-function calculateSum<T extends number>(arr: []) {
+function calculateSum1<T extends number>(arr: []) {
   let sum = 0;
   arr.map((v) => {
     sum += v;
